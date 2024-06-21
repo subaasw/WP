@@ -1,0 +1,404 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 4.21.0.1710329271
+Updated: 2024-03-13 12:27:51
+*/
+
+.embla {
+  max-width: 100%;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 10rem;
+  --slide-size: 50%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  padding-top: 0.2rem;
+  cursor: pointer;
+}
+
+.embla__slide__content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-top-right-radius: 66px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.embla__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -70px;
+  position: relative;
+  z-index: 3;
+}
+.embla__dot {
+  touch-action: manipulation;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: transparent;
+  transition: all 0.3s ease-out;
+}
+.embla__dot:after {
+  background-color: #7395a4;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: "";
+}
+.embla__dot--selected {
+  width: 9rem;
+}
+.embla__dot--selected:after {
+  width: 9rem;
+  border-radius: 12px;
+  background-color: #0a2d4a;
+  box-shadow: none;
+}
+.ns__embla__avatar {
+  position: relative;
+  top: -55px;
+  left: -65px;
+  z-index: 11;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px;
+}
+.ns-font-24px {
+  font-size: 24px;
+}
+
+.ns-wp-opacity-40 {
+  opacity: 0.4;
+}
+
+td.nswp_shown_message {
+  background-color: #d9d9d9;
+  padding: 20px 64px !important;
+  border-bottom: 2px solid #000 !important;
+}
+
+.nswp_shown_message .error_msg > p {
+  color: #fa0000;
+}
+
+.nswp_shown_message .success_msg > p {
+  color: #000 !important;
+}
+
+.order-recieved-wrapper .confirmation {
+  padding-bottom: 32px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.order-recieved-wrapper .thank-you {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.order-recieved-wrapper {
+  max-width: 960px;
+  padding: 0 24px;
+  padding-top: 0;
+  margin-bottom: 92px;
+}
+
+.order-recieved-wrapper th,
+.order-recieved-wrapper td,
+.order-recieved-wrapper strong,
+.order-recieved-wrapper p,
+.order-recieved-wrapper h1,
+.order-recieved-wrapper h2,
+.order-recieved-wrapper h3 {
+  color: #000 !important;
+}
+
+.order-recieved-wrapper .nswp-order-table th,
+.order-recieved-wrapper .nswp-order-table td {
+  padding: 8px 20px;
+  padding-left: 0;
+  color: #000;
+}
+
+.order-recieved-wrapper .nswp-flex-details {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.order-recieved-wrapper .order-items-mini-table {
+  width: 60%;
+}
+
+.order-recieved-wrapper .order-items-mini-table table {
+  background-color: #fff;
+}
+
+.order-recieved-wrapper .order-items-mini-table tbody tr td {
+  font-weight: 400;
+  padding: 12px 24px !important;
+}
+
+.order-recieved-wrapper .order-items-mini-table tbody tr:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+.order-recieved-wrapper .billing-wrapper > div {
+  background: #fff;
+  padding: 44px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-recieved-wrapper .billing-wrapper {
+  width: 50%;
+}
+
+.order-recieved-wrapper table,
+.order-recieved-wrapper tr,
+.order-recieved-wrapper thead,
+.order-recieved-wrapper tbody,
+.order-recieved-wrapper th,
+.order-recieved-wrapper td,
+.order-recieved-wrapper .entry-content table:not(.variations) {
+  border: 0 !important;
+}
+
+.order-recieved-wrapper .billing-wrapper div p {
+  padding: 0;
+}
+
+.woocommerce-order-received
+  .et_pb_wc_checkout_payment_info_0.et_pb_wc_checkout_payment_info,
+.woocommerce-order-received .et_pb_section {
+  background-color: #deffff;
+}
+
+.woocommerce-order-received .et_pb_post_title {
+  display: none;
+}
+
+.nswp-woo-login-wrapper {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nswp-woo-login-wrapper .site-logo,
+.nswp-custom-registration-form .site-logo {
+  width: 309px;
+  height: 86px;
+  margin-left: -12px;
+}
+
+.nswp-woo-login-wrapper p,
+.nswp-woo-login-wrapper h1,
+.nswp-woo-login-wrapper h2,
+.nswp-woo-login-wrapper h3,
+.nswp-woo-login-wrapper label {
+  color: #000;
+  font-weight: 400;
+}
+
+.nswp-woo-login-wrapper .section-left,
+.nswp-custom-registration-form .section-left {
+  margin-left: 16px;
+  width: 30%;
+}
+
+.nswp-woo-login-wrapper .section-right,
+.nswp-custom-registration-form .section-right {
+  width: 70%;
+  display: block;
+}
+
+.nswp-woo-login-wrapper #custom_login_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+}
+
+.nswp-woo-login-wrapper #custom_login_form p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.nswp-woo-login-wrapper #custom_login_form input {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.nswp-woo-login-wrapper .section-right h1 {
+  margin-bottom: 20px;
+}
+
+.nswp-woo-login-wrapper #custom_login_form a {
+  text-decoration: underline;
+}
+
+.nswp-woo-login-wrapper #custom_login_form button[type="submit"],
+.nswp-custom-registration-form #custom_registration_form button[type="submit"] {
+  background-color: #00ffff;
+  border: none;
+  padding: 12px 48px;
+  align-self: start;
+  border-radius: 35px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nswp-custom-registration-form {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.nswp-custom-registration-form p,
+.nswp-custom-registration-form label,
+.nswp-custom-registration-form h1 {
+  color: #000;
+  font-weight: 400;
+}
+
+#custom_registration_form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 70%;
+}
+
+#custom_registration_form p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.field-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.field-name input {
+  width: 100%;
+}
+
+#custom_registration_form input {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.field-required-asterisk {
+  color: #ff0000;
+}
+
+.product-amount-field {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.amount_actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-btn {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  color: #000;
+}
+
+.amount_up {
+  margin-bottom: 0px;
+}
+
+.field-amount-data {
+  padding: 6px 20px;
+  background: #c2c2c2;
+}
+
+.remove_coupon_code {
+  display: block;
+  font-size: 1.5em;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  line-height: 1;
+  border-radius: 100%;
+  color: red !important;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+}
+
+.remove_coupon_code:hover {
+  color: #fff !important;
+  background: red;
+}
+
+.woocommerce-cart-form__cart-item .coupon-product-remove {
+  padding-left: 62px !important;
+  width: 8px;
+}
+
+.order-wrapper table,
+.order-wrapper tr,
+.order-wrapper td,
+.order-wrapper th {
+  border: none !important;
+  font-size: 16px;
+  color: #000 !important;
+}
+
+.woocommerce-message {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.woocommerce p {
+  color: #000;
+  font-weight: 400;
+}
